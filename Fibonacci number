@@ -1,0 +1,15 @@
+x=int(input("Write How Long Sequence:"))
+a=0
+b=1
+time=0
+if x<0:
+    print("Enter A Positve Number")
+elif x==1:
+    print("",a)
+elif x>0:
+    while time<=x :
+        print(a)
+        c=a+b
+        a=b
+        b=c
+        time+=1
