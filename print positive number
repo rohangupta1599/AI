@@ -1,0 +1,33 @@
+rohan=[]
+print("Enter the value in List 1")
+a=int(input())
+rohan.append(a)
+b=int(input("1.Add More Numbers To List\n 2. Print The List"))
+while b==1:
+    c=int(input())
+    rohan.append(c)
+    b=int(input("1.Add More Numbers To List \n 2. Print The List"))
+while b==2:
+    print(rohan)
+    break
+print("output:")
+for i in rohan:
+    if i>0:
+        print(i)
+
+rohan1=[]
+print("Enter the value in List 2")
+a=int(input())
+rohan1.append(a)
+b=int(input("1.Add More Numbers To List\n 2. Print The List"))
+while b==1:
+    c=int(input())
+    rohan1.append(c)
+    b=int(input("1.Add More Numbers To List \n 2. Print The List"))
+while b==2:
+    print(rohan1)
+    break
+print("output:")
+for i in rohan1:
+    if i>0:
+        print(i)
