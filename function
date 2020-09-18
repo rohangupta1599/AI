@@ -1,0 +1,76 @@
+list1=[]
+list2=[]
+tup=("apple","mango","banana","orange","kiwi","berry")
+dct={"breakfast":"Egg","lunch":"sandwich","tea":"cookie","dinner":"pizza",}
+
+print("1.Assigning elements to diffrent list")
+a=int(input("which list do you want to add a number\n 1 or 2"))
+if a==1:
+    b=int(input("num1"))
+    list1.append(b)
+    b=int(input("num2"))
+    list1.append(b)
+    b=int(input("num3"))
+    list1.append(b)
+    c=input("Add number to list 2? [y/n]")
+    if c=="y":
+        b=int(input("num1"))
+        list2.append(b)
+        b=int(input("num2"))
+        list2.append(b)
+        b=int(input("num3"))
+        list2.append(b)
+        
+elif a==2:
+    b=int(input("num1"))
+    list2.append(b)
+    b=int(input("num2"))
+    list2.append(b)
+    b=int(input("num3"))
+    list2.append(b)
+    c=input("Add number to list 1? [y/n]")
+    if c=="y":
+        b=int(input("num1"))
+        list1.append(b)
+        b=int(input("num2"))
+        list1.append(b)
+        b=int(input("num3"))
+        list1.append(b)
+print("1:",list1,"\n2:",list2)
+
+print("2. Accessing elements from tuple")
+print(tup)
+f=int(input("Your Favourite Fruit from the Above Tuple is: [1/2/3/4/5/6]"))
+if f==1:
+    print("You have selecte the 1st element from the tupel which is ",tup[0])
+elif f==2:
+    print("You have selecte the 2nd element from the tupel which is ",tup[1])
+elif f==3:
+    print("You have selecte the 3rd element from the tupel which is ",tup[2])
+elif f==4:
+    print("You have selecte the 4th element from the tupel which is ",tup[3])
+elif f==5:
+    print("You have selecte the 5th element from the tupel which is ",tup[4])
+elif f==6:
+    print("You have selecte the 6th element from the tupel which is ",tup[5])
+
+
+
+print("3.Deleting diffrent dictionary elements")
+print(dct)
+z=input("which of the meal would you like to delete from the dictionary:[b/l/t/d]")
+if z=="b":
+    del dct["breakfast"]
+    print(dct)
+if z=="l":
+    del dct["lunch"]
+    print(dct)
+if z=="t":
+    del dct["tea"]
+    print(dct)
+if z=="d":
+    del dct["dinner"]
+    print(dct)
+
+
+
